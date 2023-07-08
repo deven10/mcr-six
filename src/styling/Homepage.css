@@ -58,6 +58,7 @@
     height: auto;
     width: 300px;
     border: 1px solid #bababa;
+    border-radius: 10px;
 }
 
 .menu-card img{
