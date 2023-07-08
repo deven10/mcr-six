@@ -44,7 +44,6 @@ export const RestuarantDetails = () => {
 
   const avgRating = (arr) => {
     const result = arr.reduce((acc, curr) => {
-      console.log(acc, curr);
       return acc + Number(curr.rating);
     }, 0);
 
