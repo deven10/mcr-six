@@ -1,0 +1,167 @@
+.restuarant-details-wrapper{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    width: 60%;
+    min-height: 100vh;
+    padding: 25px;
+    margin: 0 auto;
+}
+
+.restuarant-details-wrapper h1{
+    margin-bottom: 5px;
+}
+
+.restuarant-details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #ccc;
+}
+
+.menus, .address, .avg-rating{
+    font-size: 15px;
+    font-weight: 400;
+    color: #414141;
+    margin-bottom: 5px;
+}
+
+.menus span::after{
+    content: ", ";
+}
+
+.menus span:last-child::after{
+    content: '';
+}
+
+.reviews-wrapper{
+    padding: 30px 0px;
+    width: 100%;
+}
+
+.user-rating-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin: 25px 0px;
+}
+
+.user-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    width: 100%;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #bababa;
+    padding-right: 50px;
+}
+
+.user-basic-details img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.user-basic-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.user-details-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 10px;
+}
+
+.rating-comment{
+    font-size: 15px;
+    font-weight: 500;
+    color: #111;
+}
+
+.rating-name{
+    font-size: 18px;
+    font-weight: 500;
+    color: #111;
+}
+
+
+.rating {
+    font-size: 18px;
+    background: green;
+    padding: 5px 10px;
+    font-weight: 800;
+    color: yellow;
+}
+.rating::after {
+    content: '★';
+    padding-left: 5px;
+}
+
+.add-new-review{
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    color: #fff !important;
+    background-color: #ef4f5f !important;
+    border: 0 !important;
+    border-radius: 5px !important; 
+    padding: 20px !important;
+    cursor: pointer !important;
+    line-height: 0 !important;
+}
+
+.left-arrow::before{
+    content: "⇽";
+    font-size: 40px;
+    font-weight: 700;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    cursor: pointer;
+    padding: 15px;
+    color: #111;
+}
+
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0px;
+    gap: 5px;
+}
+
+.form-label{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.form-input{
+    font-size: 15px;
+    padding: 5px;
+    border: 1px solid #bababa;
+    text-overflow: ellipsis;
+}
+
+.buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.modal-button{
+    font-size: 15px;
+    padding: 5px 10px;
+    background: #f1f1f1;
+    border: 1px solid #bababa;
+    cursor: pointer;
+    border-radius: 5px;
+}
