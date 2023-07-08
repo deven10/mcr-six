@@ -101,6 +101,7 @@
     padding: 5px 10px;
     font-weight: 800;
     color: yellow;
+    border-radius: 5px;
 }
 .rating::after {
     content: '★';
