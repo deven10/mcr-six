@@ -1,7 +1,5 @@
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import { useParams, Link } from "react-router-dom";
-
-import { restaurantsData } from "../data/RestuarantData";
 
 import Backdrop from "@mui/material/Backdrop";
 import Box from "@mui/material/Box";
@@ -44,7 +42,15 @@ export const RestuarantDetails = () => {
     p: 4,
   };
 
-  console.log(selectedRestuarant);
+  const avgRating = (arr) => {
+    const result = arr.reduce((acc, curr) => {
+      console.log(acc, curr);
+      return acc + Number(curr.rating);
+    }, 0);
+
+    return (result / arr.length).toFixed(2);
+  };
+
   return (
     <div className="restuarant-details-wrapper">
       <h1>{selectedRestuarant?.name}</h1>
@@ -57,7 +63,7 @@ export const RestuarantDetails = () => {
           </p>
           <p className="address">{selectedRestuarant?.address}</p>
           <p className="avg-rating">
-            Average Rating: {selectedRestuarant?.averageRating}
+            Average Rating: {avgRating(selectedRestuarant?.ratings)}
           </p>
         </div>
         <Button onClick={handleOpen} className="add-new-review">

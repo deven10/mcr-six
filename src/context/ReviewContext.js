@@ -9,7 +9,6 @@ export const ReviewContext = ({ children }) => {
 
   const [allRestuarantsData, setAllRestuarantsData] = useState(restaurantsData);
 
-  //   const imgUrl = "https://i.ibb.co/xgKM67j/download.jpg";
   const imgUrl = "https://i.ibb.co/BrSM4RV/download-1.jpg";
 
   const handleClear = () => {
@@ -33,7 +32,7 @@ export const ReviewContext = ({ children }) => {
         pp: imgUrl,
       };
 
-      const newData = restaurantsData.map((data) =>
+      const newData = allRestuarantsData.map((data) =>
         data.id === Number(restuarantId)
           ? { ...data, ratings: [...data.ratings, newRating] }
           : data
